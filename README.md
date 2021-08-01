@@ -26,4 +26,5 @@
 
 ### CREDITS 
 
+• [THEHAMKERCAT](https://github.com/TheHamkerCat/LunaChatBot)
 
