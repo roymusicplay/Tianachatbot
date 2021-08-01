@@ -11,10 +11,10 @@ from config import bot
 
 print("[INFO]: Master EliteDarkRay checking...")
 luna = Client(":memory:",
-              bot_token=bot_token,
-              api_id=api_id,
-              api_hash=api_hash,
-)
+             api_id=API_ID,
+             api_hash=API_HASH,
+             bot_token=BOT_TOKEN)
+
 bot_id = int(bot_token.split(":")[0])
 print("[INFO]: Code running by master EliteDarkRay")
 arq = None
