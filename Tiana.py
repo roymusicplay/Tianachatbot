@@ -1,4 +1,4 @@
-print("[INFO]: Importing master EliteDarkRay's memory")
+print("[INFO]: Importing Your API_ID, API_HASH, BOT_TOKEN")
 import re
 from asyncio import (gather, get_event_loop, sleep)
 
@@ -9,10 +9,10 @@ from Python_ARQ import ARQ
 from config import bot, BOT_TOKEN, ARQ_API_KEY, ARQ_API_BASE_URL, LANGUAGE
 bot_token= BOT_TOKEN
 
-print("[INFO]: Master EliteDarkRay checking...")
+print("[INFO]: Checking... Your Details")
 
 bot_id = int(bot_token.split(":")[0])
-print("[INFO]: Code running by master EliteDarkRay")
+print("[INFO]: Code running by master Prince Op")
 arq = None
 
 
@@ -39,15 +39,15 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "typing")
     response, _ = await gather(lunaQuery(query, user_id), sleep(2))
     if "Luna" in response:
-        responsee = response.replace("Luna", "Iris AI")
+        responsee = response.replace("Luna", "Tiana")
     else:
         responsee = response
     if "Aco" in responsee:
-        responsess = responsee.replace("Aco", "Iris AI")
+        responsess = responsee.replace("Aco", "Tiana")
     else:
         responsess = responsee
-    if "Who is Iris AI?" in responsess:
-        responsess2 = responsess.replace("Who is Iris AI?", "Nani?👀")
+    if "Who is Tiana?" in responsess:
+        responsess2 = responsess.replace("Who is Tiana?", "Heroine Of Telegram")
     else:
         responsess2 = responsess
     await message.reply_text(responsess2)
@@ -57,7 +57,7 @@ async def type_and_send(message):
 @bot.on_message(
     ~filters.private
     & filters.text
-    & ~filters.command(["start", "start@testhdmaibot"])
+    & ~filters.command("start")
     & ~filters.edited,
     group=69,
 )
@@ -81,19 +81,19 @@ async def chat(_, message):
 
 @bot.on_message(
     filters.private
-    & ~filters.command(["start", "start@testhdmaibot"])
+    & ~filters.command("start")
     & ~filters.edited
 )
 async def chatpm(_, message):
     if not message.text:
-        await message.reply_text("Ufff... ignoring ....")
+        await message.reply_text("Ufff... Ignoring .... ¯\_(ツ)_/¯")
         return
     await type_and_send(message)
 
 
-@bot.on_message(filters.command(["start", "start@testhdmaibot"]) & ~filters.edited)
+@bot.on_message(filters.command("start") & ~filters.edited)
 async def startt(_, message):
-    await message.reply_text("Hi, i'm alive :)")
+    await message.reply_text("Hi, I'm Alive ╮(. ❛ ᴗ ❛.)╭")
 
 
 async def main():
@@ -104,11 +104,7 @@ async def main():
     await bot.start()
     print(
         """
-    All process by master EliteDarkRay
-    will be builded and also deployed
-    at termux also thanking original
-    owners so that way everything will
-    be completed Successfully 
+Your TianaChatBot Is Deployed Successfully.
 """
     )
     await idle()
