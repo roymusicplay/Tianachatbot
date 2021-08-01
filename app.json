@@ -3,7 +3,15 @@
   "description": "Open-Source bot for Aichat bot",
   "keywords": ["aichatbot", "chatbot", "telegram"],
   "repository": "https://github.com/PRINCE301102",
-  "stack": "container",
+  "buildpacks": [{
+  "url": "heroku/python"
+  }],
+  "formation": {
+  "worker": {
+  "quantity": 1,
+  "size": "free"
+        }
+    },
   "env": {
     "BOT_TOKEN": {
       "description": "A bot token from @BotFather",
