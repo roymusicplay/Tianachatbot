@@ -6,7 +6,7 @@ from aiohttp import ClientSession
 from pyrogram import (Client, filters, idle)
 from Python_ARQ import ARQ
 
-from config import bot
+from config import API_ID, API_HASH, BOT_TOKEN
 
 
 print("[INFO]: Master EliteDarkRay checking...")
