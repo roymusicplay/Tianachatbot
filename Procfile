@@ -1,1 +1,1 @@
-worker: python3.9 rika.py
+worker: python rika.py
