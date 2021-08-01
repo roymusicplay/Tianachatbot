@@ -6,14 +6,10 @@ from aiohttp import ClientSession
 from pyrogram import (Client, filters, idle)
 from Python_ARQ import ARQ
 
-from config import API_ID, API_HASH, BOT_TOKEN
+from config import bot
 
 
 print("[INFO]: Master EliteDarkRay checking...")
-luna = Client(":memory:",
-             API_ID=api_id,
-             API_HASH=api_hash,
-             BOT_TOKEN=bot_token)
 
 bot_id = int(bot_token.split(":")[0])
 print("[INFO]: Code running by master EliteDarkRay")
@@ -105,7 +101,7 @@ async def main():
     session = ClientSession()
     arq = ARQ(ARQ_API_BASE_URL, ARQ_API_KEY, session)
 
-    await luna.start()
+    await bot.start()
     print(
         """
     All process by master EliteDarkRay
