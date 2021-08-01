@@ -11,9 +11,9 @@ from config import API_ID, API_HASH, BOT_TOKEN
 
 print("[INFO]: Master EliteDarkRay checking...")
 luna = Client(":memory:",
-             api_id=API_ID,
-             api_hash=API_HASH,
-             bot_token=BOT_TOKEN)
+             API_ID=api_id,
+             API_HASH=api_hash,
+             BOT_TOKEN=bot_token)
 
 bot_id = int(bot_token.split(":")[0])
 print("[INFO]: Code running by master EliteDarkRay")
