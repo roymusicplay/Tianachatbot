@@ -1,7 +1,7 @@
 # Tiana Chat Bot
 • Just another Telegram AI chat bot written in Python using Pyrogram.
 
-• A public running instance can be found on telegram as [@TIANA_PRINCE_BOT](https://t.me/TIANA_PRINCE_BOT).
+• A Public Running Instance can be found on Telegram as [@TIANA_PRINCE_BOT](https://t.me/TIANA_PRINCE_BOT).
 
 ![Deploy](https://telegra.ph/file/bcd7b3dec21d1c2b2583a.png)
 
@@ -23,3 +23,7 @@
 4. `cp sample_config.py config.py`
 5. Edit `config.ini` with your own values.
 6. Run with `python3 luna.py`
+
+### CREDITS 
+
+
