@@ -54,7 +54,7 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "cancel")
 
 
-@luna.on_message(
+@bot.on_message(
     ~filters.private
     & filters.text
     & ~filters.command(["start", "start@testhdmaibot"])
@@ -79,7 +79,7 @@ async def chat(_, message):
     await type_and_send(message)
 
 
-@luna.on_message(
+@bot.on_message(
     filters.private
     & ~filters.command(["start", "start@testhdmaibot"])
     & ~filters.edited
@@ -91,7 +91,7 @@ async def chatpm(_, message):
     await type_and_send(message)
 
 
-@luna.on_message(filters.command(["start", "start@testhdmaibot"]) & ~filters.edited)
+@bot.on_message(filters.command(["start", "start@testhdmaibot"]) & ~filters.edited)
 async def startt(_, message):
     await message.reply_text("Hi, i'm alive :)")
 
