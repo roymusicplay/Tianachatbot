@@ -2,7 +2,6 @@ import os
 
 from heroku3 import from_key
 from pyrogram import Client
-from pyromod import listen
 
 api_id = int(os.environ.get("API_ID", 0))
 api_hash = os.environ.get("API_HASH", None)
