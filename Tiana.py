@@ -1,4 +1,4 @@
-print("[INFO]: Importing Your API_ID, API_HASH, BOT_TOKEN")
+print("[INFO]: Importing Your BOT_TOKEN")
 import re
 from asyncio import (gather, get_event_loop, sleep)
 
@@ -9,10 +9,10 @@ from Python_ARQ import ARQ
 from config import bot, BOT_TOKEN, ARQ_API_KEY, ARQ_API_BASE_URL, LANGUAGE
 bot_token= BOT_TOKEN
 
-print("[INFO]: Checking... Your Details")
+print("[INFO]: Checking... Your BOT_TOKEN")
 
 bot_id = int(bot_token.split(":")[0])
-print("[INFO]: Code running by master Prince Op")
+print("[INFO]: CODING BY PRINCE OP")
 arq = None
 
 
