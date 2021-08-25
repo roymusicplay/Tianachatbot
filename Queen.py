@@ -12,7 +12,7 @@ bot_token= BOT_TOKEN
 print("[INFO]: Checking... Your BOT_TOKEN")
 
 bot_id = int(bot_token.split(":")[0])
-print("[INFO]: CODING BY PRINCE OP")
+print("[INFO]: CODING BY ABHINAS OP")
 arq = None
 
 
@@ -39,15 +39,15 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "typing")
     response, _ = await gather(lunaQuery(query, user_id), sleep(2))
     if "Luna" in response:
-        responsee = response.replace("Luna", "Tiana")
+        responsee = response.replace("Luna", "Queen")
     else:
         responsee = response
     if "Aco" in responsee:
-        responsess = responsee.replace("Aco", "Tiana")
+        responsess = responsee.replace("Aco", "Queen")
     else:
         responsess = responsee
-    if "Who is Tiana?" in responsess:
-        responsess2 = responsess.replace("Who is Tiana?", "Heroine Of Telegram")
+    if "Who is Queen?" in responsess:
+        responsess2 = responsess.replace("Who is Queen?", "Heroine Of Telegram")
     else:
         responsess2 = responsess
     await message.reply_text(responsess2)
@@ -91,7 +91,7 @@ async def chatpm(_, message):
     await type_and_send(message)
 
 
-@bot.on_message(filters.command("tiana") & ~filters.edited)
+@bot.on_message(filters.command("Queen") & ~filters.edited)
 async def startt(_, message):
     await message.reply_text("Hi, I'm Alive ╮(. ❛ ᴗ ❛.)╭")
 
@@ -104,7 +104,7 @@ async def main():
     await bot.start()
     print(
         """
-Your TianaChatBot Is Deployed Successfully.
+Your QueenChatBot Is Deployed Successfully.
 """
     )
     await idle()
